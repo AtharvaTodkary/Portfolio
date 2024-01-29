@@ -1,0 +1,934 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #081b29;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    padding: 20px 100px;
+    align-items: center;
+    background-color: #041724;
+}
+header>a{
+    text-decoration: none;
+    color: white;
+    margin:0px 4px;
+    font-size: 20px;
+    font-weight:800; 
+}
+header nav>a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 4px;
+    font-size: 15px;
+    font-weight:100;
+    margin-right: 20px;
+}
+header nav>a:hover{
+    color: #0ef;
+}
+header nav #menu{
+    color: white;
+    display: none;
+}
+/* ------------------------------------------------------------------------------------- */
+.drop-down .dnav{
+    background-color: black;
+    position: static;
+    padding: 5vh;
+    height: 60vh;
+    width: 100%;
+    border: 1px solid red;
+    display: block;
+}
+.drop-down a{
+    text-decoration: none;
+    color: white;
+    padding: 2vh;
+}
+/* ------------------------------------------------------------------------------------- */
+.first{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.first .profile{
+    height: 100vh;
+    width: 90%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.profile .info{
+    height: 100%;
+    width: 60%;
+    padding: 7% 6%;
+}
+.profile .pic{
+    height: 100%;
+    width: 40%;
+}
+.profile .info h2{
+    display: inline-block;
+    text-align:left;
+    font-size: 26px;
+    font-weight: 700;
+}
+.profile .info h1{
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: left;
+    padding: 1% 0%;
+}
+.profile .info h3{
+    display: inline-block;
+    font-size: 28px;
+    font-weight:700;
+}
+.profile .info p{
+    padding: 5% 0%;
+    font-size: 16px;
+    text-align: justify;
+}
+.buttons button{
+    width:30%;
+    border-color: #0ef;
+    margin:2% 8% 3% 0%;
+    padding:2%;
+    border-radius: 10px;
+    background-color:#081b29;
+    cursor: pointer;
+    color: #0ef;
+    font-size: 15px;
+    font-weight: 600;
+    border-width: 3px;
+    box-shadow: 2px 2px 20px #0ef;
+}
+.buttons button:hover{
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: -10px 10px 30px black;
+
+}
+.profile .info .icons{
+    display: flex;
+    margin:4% 3%;
+    gap: 6%;
+}
+.profile .info .icons i{
+    font-size: 20px;
+    color: #0ef;
+    border: 2px solid #0ef;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 8px 9px;
+    cursor: pointer;
+    box-shadow: -3px 3px 30px;
+}
+.profile .icons i:hover{
+    color: #081b29;
+    background-color: #0ef;
+    box-shadow: -10px 10px 30px black;
+}
+.profile .pic .pfp .gooey{
+    width:  100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 2%;
+    border-radius: 50%;
+    background: linear-gradient( to top, #01317B, #4FDAFF);
+    filter: blur(15px);
+    animation-name: gooey;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes gooey{
+    form{
+        transform: translate(5%,-5%) skew(0);
+    }
+    to{
+        transform: translate(-5%,5%) skew(-15deg);
+    }
+}
+.pic .pfp{
+    position: absolute;
+    border: solid #0ef;
+    border-width: 9px;
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50%;
+    box-shadow: 1px 1px 30px #0ef;
+    margin: 10vh 5%;
+}
+.profile .pic img{
+    position: absolute;
+    height: 60vh;
+    margin: -8vh 4vh;
+}
+/*--------------------------------------------------------------------------- */
+.second{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.second .about{
+    position: absolute;
+    height: 80vh;
+    width: 90%;
+    margin: 10vh 5%;
+}
+.about .pfp{
+    position: absolute;
+    border: solid #0ef;
+    border-width: 9px;
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50%;
+    box-shadow: 1px 1px 30px #0ef;
+    margin: 10vh 5%;
+}
+.about .pfp img{
+    position: absolute;
+    height: 61vh;
+    margin: -15% 5%;
+}
+.about .pfp .gooey2{
+    width:  100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient( to top, #01317B, #4FDAFF);
+    filter: blur(15px);
+    animation-name: gooey;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.about .me{
+    position: relative;
+    width: 45%;
+    color: white;
+    float: right;
+    margin: 17vh;
+    text-align: justify;
+}
+.about .me h1{
+    font-size: 38px;
+    font-weight: 800;
+    padding: 5px;
+}
+.about .me h3{
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+.about .me p{
+    font-size: 17px;
+}
+.about .me button{
+    border-color: #0ef;
+    height: 7vh;
+    width: 17vh;
+    border-radius: 50px;
+    margin: 5% 10%;
+    background-color: #081b29;
+    box-shadow: 2px 2px 20px #0ef;
+    color: #0ef;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.about .me button:hover{
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 5px 5px 30px black;
+}
+
+/* ---------------------------------------------------------------------------------- */
+.third{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.skills{
+    height: 90vh;
+    width: 90%;
+    align-self: center;
+}
+.top{
+    height: 12vh;
+    width: 100%;
+}
+.top h1{
+    text-align: center;
+    color: White;
+    font-size: 45px;
+    font-weight: 800;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    margin-top: 7%;
+}
+.card1{
+    height: 55vh;
+    width: 23%;
+    border-radius: 10px;
+    background-color: #515159;
+    box-shadow: -5px 5px 30px black;
+}
+.card1 i{
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    color: #0ef;
+    padding-top: 10% ;
+}
+.card1 h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+}
+.card1 p{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 5%;
+    color: white;
+    font-size: 15px;
+}
+.card1 button{
+    border-color: #0ef;
+    height: 7vh;
+    width: 17vh;
+    border-radius: 50px;
+    margin: 10% 30%;
+    background-color: #081b29;
+    box-shadow: 2px 2px 20px #0ef;
+    color: #0ef;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.card1 button:hover{
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 2px 2px 20px #081b29;
+}
+/* ------------------------------------------------------------------------------------------------- */
+.certificate{
+    height: 80vh;
+    width: 100%;
+    padding: 0vh;
+}
+.certificate h1{
+    text-align: center;
+    color: #0ef;
+    font-size: 45px;
+    font-weight: 800;
+    padding-bottom: 3vh;
+}
+.swiper {
+    width: 80%;
+    height: 50vh;
+    margin-top: 5vh;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* --------------------------------------------------------------------------------------- */
+
+.fourth{
+    height: 140vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.project-container{
+    height: 120vh;
+    width: 90%;
+    align-self: center;
+    background-image: url('https://i.pinimg.com/564x/fd/da/64/fdda64d276172abbb3363cfd1272d3e5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 5px;
+}
+.myproj{
+    height: 22vh;
+    width: 100%;
+}
+.myproj h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    padding-top: 10vh;
+}
+.project{
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    padding-top: 5vh;
+}
+.project .pro{
+    position: relative;
+    height: 70vh;
+    width: 22%;
+    margin-top: 10vh;
+    border-radius: 10px;
+    box-shadow: -5px 5px 30px black;
+    overflow: hidden;
+    display: flex;
+}
+.pro #aniflex{
+    width:100%;
+}
+.pro img{
+    transition: 0.5s ease;
+}
+.pro:hover img{
+    transform: scale(1.1);
+}
+.pro .pro-layer{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.4), #0ef);
+    color: white;
+    text-align: center;
+
+}
+.pro-layer h3{
+    font-size: 25px;
+    font-weight: 800;
+    padding: 5% 0;
+    margin-top: 28%;    
+}
+.pro-layer p{
+    font-size: 13px;
+    text-align: center;
+}
+.pro-layer button{
+    border-color: #0ef;
+    height: 7vh;
+    width: 17vh;
+    border-radius: 50px;
+    margin: 10% 30%;
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 2px 2px 20px #0ef;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.pro-layer button:hover{
+    background-color: #081b29;
+    color: #0ef;
+    box-shadow: 2px 2px 20px #081b29;
+}
+/* --------------------------------------------------------------------------------- */
+.fifth{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.fifth .contact-container{
+    height: 90vh;
+    width: 90%;
+    align-self: center;
+    margin-top: 3%;
+}
+.cont-head{
+    height: 12vh;
+    width: 100%;
+}
+.cont-head h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+.contact{
+    height: 78vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact form{
+    width: 50%;
+    height: 65vh;
+    align-self: center;
+    padding: 2%;
+    font-size: 20px;
+}
+.input-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.input-info input{
+    height: 8vh;
+    width: 45vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #515159;
+    color: white;
+    padding-left: 5%;
+    box-shadow: 5px 5px 30px #0ef;
+}
+.input-info input::placeholder{
+    color: white;
+    font-size: 14px;
+}
+.contact form textarea{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+    resize: none;
+    background-color: #515159;
+    color: white;
+    font-size: 14px;
+    padding: 3% 5%;
+    box-shadow: 5px 5px 30px #0ef;
+}
+.contact form textarea::placeholder{
+    color: white;
+    font-size: 14px;
+}
+.contact form .btn{
+    height: 7vh;
+    width: 20%;
+    border-radius: 10px;
+    margin: 0% 40%;
+    background-color: #515159;
+    color: white;
+    box-shadow: -5px 5px 30px #0ef;
+
+}
+.contact form .btn:hover{
+    opacity: 0.7;
+}
+
+
+
+/* --------------------------------------------------------------------------------- */
+footer{
+    position: relative;
+    padding: 15px 100px;
+    clear: both;
+    color: aliceblue;
+    background-color: #041724;
+    display: flex;
+    justify-content: space-between;
+}
+footer .icons{
+    display: flex;
+    position: relative;
+    gap: 7vh;
+}
+footer .icons p{
+    font-size: 20px;
+    align-self: center;
+}
+footer .icons i{
+    font-size: 20px;
+    color: #0ef;
+    border: 2px solid #0ef;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    margin: 2% 0;
+    cursor: pointer;
+}
+footer .icons i:hover{
+    background-color: #0ef;
+    color: #081b29;
+}
+footer .reset i{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #0ef;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 20% 25%;
+    background-color: #0ef;
+    color: #081b29;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+@media (max-width: 785px){
+    .drop-down{
+        display: none;
+    }
+    .profile{
+        padding-top: 10vh;
+    }
+    .profile .info{
+        padding: 13% 5%;
+    }
+     .profile .info h1{
+        font-size: 30px;
+    }
+    .profile .info h2{
+        font-size: 21px;
+    }
+    .profile .info h3{
+        font-size: 21px;
+    }
+    .profile .pic{
+        padding: 5% 0;
+    }
+    .profile .pic .gooey{
+        height: 35vw;
+        width: 35vw;
+        margin-left: -1vh;
+    }
+    .first .pic .pfp{
+        height: 45vh;
+        width: 45vh;
+        margin-left: -1vh;
+    }
+    .first .pic .pfp img{
+        height: 275px;
+        margin: -8vh 1vh;
+    }
+    header nav #menu{
+        display: block;
+        font-size: 30px;
+    }
+    header nav>a{
+        display: none;
+    }
+    .about{
+        margin-top: 10vh;
+    }
+    .second .gooey2{
+        height: 35vw;
+        width: 35vw;
+    }
+    .about .pfp{
+        height: 45vh;
+        width: 45vh;
+    }
+    .about .pfp>img{
+        height: 275px;
+    }
+    .about .me{
+        margin: 10vh 20px;
+        padding-left: 10vh;
+    }
+    .about .me h1{
+        font-size: 33px;
+    }
+    .about .me h3{
+        font-size: 18px;
+    }
+    .card1{
+        height: 55vh;
+        width: 23%;
+    }
+    .card1 i{
+        font-size: 30px;
+        padding-top: 10%;
+    } 
+    .card1 h3{
+        font-size: 18px;
+        padding-top: 5%;
+    }
+    .card1 p{
+        margin-left: 10%;
+        margin-top: 5%;
+        font-size: 12px;
+    }
+    .card1 button{
+        margin: 10% 20%;
+    }
+    .cont-head{
+        margin-top: -7vh;
+    }
+    .input-info{
+        justify-content: center;
+    }
+    .contact form .btn{
+        height: 8vh;
+        width: 18vh;
+        margin: 0 34%;
+    }
+}
+
+@media (max-width:607px){
+    header>a{
+        text-decoration: none;
+        color: white;
+        margin:0px -50px;
+        font-size: 22px;
+    }
+    header nav #menu{
+        margin-right: -0px;
+    }
+    .first{
+        height: 160vh;
+        margin-left: -2%;
+    }
+    .profile{
+        margin-top: -80vh;
+        margin-left: 4%;
+    }
+    .profile .info{
+        width: 100%;
+    }
+    .profile .info h1{
+        font-size: 34px;
+    }
+    .profile .info h2{
+        font-size: 25px;
+    }
+    .profile .info h3{
+        font-size: 25px;
+    }
+    .profile .info p{
+        font-size: 17px;
+    }
+    .profile .pic{
+        width: 100%;
+    }
+    .first .profile{
+        height: 100vh;
+        width: 90%;
+        align-self: center;
+        display: grid;
+    }
+    .profile .pic .pfp{
+        height: 55vh;
+        width: 55vh;
+        margin: -7vh 10%;
+    }
+    .profile .pic .pfp .gooey{
+        width:  100%;
+        height: 100%;
+        position: absolute;
+        margin-top: 2%;
+        border-radius: 50%;
+    }
+    .profile .pic .pfp img{
+        position: absolute;
+        height: 55vh;
+        margin: -8vh 3vh;
+    }
+    .card1 button{
+        height: 5vh;
+        width: 10vh;
+        margin: 10% 30%;
+        font-size: 9px;
+    }
+    .pro-layer button{
+        margin: 10% 0vh;
+        font-size: 13px;
+    }
+    .second{
+        height: 160vh;
+        margin: -10vh 0% ;
+    }
+    .second .about{
+        display: grid;
+    }
+    .second .about .me{
+        position: relative;
+        padding: 0;
+    }
+    .second .about .pfp{
+        margin-top: 65vh;
+        margin-left: 12vh;
+        height: 55vh;
+        width: 55vh;
+    }
+    .second .about .pfp img{
+        height: 55vh;
+    }
+    .second .about .pfp .gooey2{
+        height: 100%;
+        width: 100%;
+    }
+    .second .about .me{
+        width: 90%;
+    }
+    .second .about .me h1{
+        font-size: 34px;
+    }
+    .second .about .me h3{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+    .second .about .me p{
+        font-size: 17px;
+    }
+    .second .about .me button{
+        margin-left: 30%;
+    }
+    .third{
+        height: 150vh;
+    }
+    .skills .top{
+        margin-top: -25%;
+        margin-bottom: 10%;
+    }
+    .card-container{
+        display: grid;
+        align-content: center;
+    }
+    .card1{
+        height: 33vh;
+        width: 75%;
+        margin-left: 12%;
+    }
+    .card1 i{
+        font-size: 25px;
+        padding: 2%;
+    }
+    .card1 h3{
+        font-size: 25px;
+        padding-top: 0%;
+    }
+    .card1 p{
+        font-size: 12px;
+        padding-top: -10%;
+        text-align: center;
+    }
+    .card1 button{
+        margin: 4% 42%;
+    }
+    .fourth{
+        height: 330vh;
+        margin-top: -5%;
+    }
+    .fourth .project-container{
+        height: 300vh;
+        align-items: center;
+    }
+    .project-container .project{
+        display: grid;
+    }
+    .project .pro{
+        height: 70vh;
+        width: 58%;
+        align-self: center;
+        margin-left: 23%;
+    }
+    .contact form{
+        width: 95%;
+        height: 65vh;
+    }
+    .input-info input{
+        height: 8vh;
+        width: 100%;
+    }
+    .contact form textarea{
+        width: 100%;
+        height: 30vh;
+    }
+    .contact form .btn{
+        margin: 0% 37%;
+    }
+    footer .icons{
+        margin-left: -5%;
+    }
+    footer .icons i{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        padding: 7px;
+        border-radius: 100%;
+    }
+    footer .reset{
+        margin: 0 20%;
+    }
+    footer .icons p{
+        font-size: 14px;
+    }
+    footer .reset i{
+        height: 30px;
+        width: 30px;
+        border: 1px solid #0ef;
+        border-radius: 12px;
+        font-size: 20px;
+    }
+}
+@media (max-width:450px){
+    footer .icons{
+        margin-left: -20%;
+        gap: 5vh;
+    }
+    footer .icons i{
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        padding: 7px;
+        border-radius: 100%;
+    }
+}
+@media (max-width:421px){
+    .second .about .pfp{
+        margin: 70vh 7vh;
+        height: 45vh;
+        width: 45vh;
+    }
+    .second .about .pfp img{
+        height: 45vh;
+    }
+    .profile .pic .pfp{
+        height: 45vh;
+        width: 45vh;
+        margin: -7vh 10%;
+    }
+    .profile .pic .pfp img{
+        position: absolute;
+        height: 45vh;
+        margin: -7vh 2vh;
+    }
+    footer .icons{
+        margin-left: -30%;
+        gap: 5vh;
+    }
+}
