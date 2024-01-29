@@ -48,7 +48,7 @@ header nav #menu{
     height: 60vh;
     width: 100%;
     border: 1px solid red;
-    display: block;
+    display: none;
 }
 .drop-down a{
     text-decoration: none;
@@ -599,9 +599,9 @@ footer .reset i{
 
 /* ------------------------------------------------------------------------------------------------- */
 @media (max-width: 785px){
-    .drop-down{
+    /* .drop-down{
         display: none;
-    }
+    } */
     .profile{
         padding-top: 10vh;
     }
