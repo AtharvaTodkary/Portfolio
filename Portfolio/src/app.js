@@ -36,9 +36,9 @@ app.post("/contact",(req,res)=>{
         "message":msg
     }
     db.collection('users').insertOne(data,(err,collection)=>{
-        if(err){
-            throw err;
-        }
+        // if(err){
+        //     throw err;
+        // }
         console.log("Record Inserted Successfully")
     })
     return res.redirect('home_page.html')
